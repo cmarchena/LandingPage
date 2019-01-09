@@ -9,8 +9,6 @@ table { border-collapse: collapse; border-spacing: 0;}
 
 
 body {
-
-	font-famil
         /*Al principio, no agrupes las propiedades, prueba una a una, porque sino, no sabes cual te está dando el error*/
         background: #ffffff url("../img/big-data.jpg") no-repeat scroll;
 
