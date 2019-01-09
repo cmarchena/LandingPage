@@ -7,17 +7,30 @@ blockquote,q { quotes: none;}
 blockquote:before,blockquote:after,q:before,q:after { content: ''; content: none;}
 table { border-collapse: collapse; border-spacing: 0;}
 
-/*Background*/
 
 body {
-        background: #cccccc url("duplo-1981724.jpg") no-repeat scroll 33px 0px;
+
+	font-famil
+        /*Al principio, no agrupes las propiedades, prueba una a una, porque sino, no sabes cual te está dando el error*/
+        background: #ffffff url("../img/big-data.jpg") no-repeat scroll;
+
+        /*tienes que hacer más pequeña la imagen*/
+        background-size:75% auto;
+        /*Una vez que la imagen tenga el tamaño que necesitas, posicionala a la derecha. */
+        background-position: right top;
+
       }
+
+      /*No tienes h1 en el código html, por lo que no se está aplicando a nada*/
 h1 {
         color: white;
         text-align: center;
       }
      
+/*Es mejor que le pongas la fuente genérica y a partir de la que se va a calcular el resto de componentes al body, 
+a partir de ahí en lugar de utilizar px, utilizas em como unidad de media. */
 p {
-        font-family: 'roboto','Montserrat', sans-serif;
+        font-family: 'roboto','Montserrat', sans-serif; /*Esto hace que coja Roboto y si no la encuentra Montserrat, y no es lo que
+        queremos. por un lado tienes que crear la fuente roboto y por otro la fuente Montserrat*/
         font-size: 20px;
-      }
+   }
